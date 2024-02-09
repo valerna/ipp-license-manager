@@ -37,9 +37,9 @@ function custom_licenses_content() {
         $order_number = $customer_order->get_order_number();
 
         for ( $i = 1; $i <= 13; $i++ ) {
-            $pteam_field = 'pteam_' . $i;
+            $team_field = 'team_' . $i;
             $license_field = 'license_' . $i;
-            $pteam_value = get_post_meta( $order_id, $pteam_field, true );
+            $team_value = get_post_meta( $order_id, $team_field, true );
             $license_value = get_post_meta( $order_id, $license_field, true );
 
             if ( ! empty( $pteam_value ) && ! empty( $license_value ) ) {
